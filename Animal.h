@@ -36,7 +36,13 @@ public:
 	// This is called a signature
 	void eat();
 	string getName();
-	string setName(string name);
+	
 	int add(int first, int second);
+
+	// Accessor methods - methods to read or wrtie attributes
+	int getAge();
+protected:
+	void setAge(int newAge);
+	void setName(string newName);
 };
 

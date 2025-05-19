@@ -25,11 +25,18 @@ string Animal::getName() {
 	return name;
 };
 
-string Animal::setName(string newName) {
+void Animal::setName(string newName) {
 	name = newName;
-	return name;
 };
 
 int Animal::add(int a, int b) {
 	return a + b;
 };
+
+int Animal::getAge() {
+	return age;
+}
+
+void Animal::setAge(int newAge) {
+	age = newAge;
+}

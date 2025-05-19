@@ -18,13 +18,52 @@ int main()
 {
     cout << "Hello World!\n";
 
-    Animal dog;
+    /*Animal dog;
     dog.setName("Bambu");
     cout << dog.getName() << endl;
-    cout << dog.add(2, 3) << endl;
+    cout << dog.add(2, 3) << endl;*/
 
     Animal cat("cat", 10, 5);
     cat.eat();
+    cout << cat.getAge() << endl;
+
+    //Flow control Structures (conditions, loops)
+    // Conditions
+    if (cat.getAge() < 2) {
+        cout << "Baby Animal" << endl;
+    }
+    else if (cat.getAge() < 5) {
+        cout << "Young Animal" << endl;
+    }
+    else {
+        cout << "Adult Animal" << endl;
+    }
+
+    switch (cat.getAge()) {
+    case 1:
+        cout << "ONE YEAR OLD" << endl;
+        break;
+    default:
+        cout << "SMOE OTHER AGE" << endl;
+        break;
+    }
+    //Loops
+    // for
+    for (int i = 0; i < 10; i++) {
+        cout << i << endl;
+    }
+    // while
+    int i = 0;
+    while (i < 10) {
+        cout << i << endl;
+        i++;
+    }
+    // do - while
+    i = 0;
+    do {
+        cout << i << endl;
+        i++;
+    } while (1 < 10);
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
